@@ -11,7 +11,7 @@ import cmocean
 
 def read_data(fname, month):
     """Read an input data file"""
-    
+    assert ".nc" in fname, "Infile is incorrect file type"
     cube = iris.load_cube(fname, 'precipitation_flux')
     
     iris.coord_categorisation.add_month(cube, 'time')
