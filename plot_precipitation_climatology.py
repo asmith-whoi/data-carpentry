@@ -1,11 +1,11 @@
+import pdb
 import argparse
+import numpy
 import iris
 import matplotlib.pyplot as plt
 import iris.plot as iplt
 import iris.coord_categorisation
 import cmocean
-import numpy
-
 
 def read_data(fname, month):
     """Read an input data file"""
